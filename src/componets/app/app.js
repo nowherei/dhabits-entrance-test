@@ -6,10 +6,9 @@ const App = () => {
   const [cached, setCached] = useState({});
   const [opened, setOpened] = useState([0]);
 
-  const lastId = opened[opened.length - 1];
-
   useEffect(() => {
     const fetchData = async () => {
+      const lastId = opened[opened.length - 1];
       if (cached[lastId]) return;
       const response = await fetch(
         `http://164.90.161.80:3000/api/content${
@@ -17,14 +16,11 @@ const App = () => {
         }`
       );
       const data = await response.json();
-      console.log(data);
       setCached({ ...cached, [lastId]: data });
     };
 
     fetchData();
-  }, [opened]);
-
-  // if (cached[lastId]) return false;
+  });
 
   return (
     <div className="tree">

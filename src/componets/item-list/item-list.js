@@ -11,22 +11,22 @@ const ItemList = ({ id = 0, cached, opened, setOpened }) => {
   const items = children.map((item) => {
     const { id, title, children } = item;
 
-    const status = opened.includes(id);
+    const switcherStatus = opened.includes(id);
 
     const extension = title.split(".").slice(1).pop();
 
-    let icon = "file";
+    let iconName = "file";
     let switchButton = "";
 
     if (children) {
-      icon = "folder";
+      iconName = "folder";
       switchButton = (
         <div
           className={
-            "tree__item-switcher" + (status ? " tree__item-switcher_open" : "")
+            "tree__item-switcher" + (switcherStatus ? " tree__item-switcher_open" : "")
           }
           onClick={() => {
-            if (status) {
+            if (switcherStatus) {
               setOpened(opened.filter((item) => item !== id));
             } else {
               setOpened([...opened, id]);
@@ -39,17 +39,17 @@ const ItemList = ({ id = 0, cached, opened, setOpened }) => {
     }
 
     if (["zip", "jpg"].includes(extension)) {
-      icon = extension;
+      iconName = extension;
     }
 
     return (
       <li className="tree__item" key={id}>
         {switchButton}
         <div className="tree__item-icon">
-          <Icon name={icon} />
+          <Icon name={iconName} />
         </div>
         {title}
-        {children && status ? (
+        {children && switcherStatus ? (
           <ItemList
             id={id}
             cached={cached}
