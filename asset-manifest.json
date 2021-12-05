@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dhabits-entrance-test/static/css/main.302fe117.chunk.css",
+    "main.js": "/dhabits-entrance-test/static/js/main.a98ce057.chunk.js",
+    "main.js.map": "/dhabits-entrance-test/static/js/main.a98ce057.chunk.js.map",
+    "runtime-main.js": "/dhabits-entrance-test/static/js/runtime-main.219439f0.js",
+    "runtime-main.js.map": "/dhabits-entrance-test/static/js/runtime-main.219439f0.js.map",
+    "static/js/2.d7c312c6.chunk.js": "/dhabits-entrance-test/static/js/2.d7c312c6.chunk.js",
+    "static/js/2.d7c312c6.chunk.js.map": "/dhabits-entrance-test/static/js/2.d7c312c6.chunk.js.map",
+    "index.html": "/dhabits-entrance-test/index.html",
+    "static/css/main.302fe117.chunk.css.map": "/dhabits-entrance-test/static/css/main.302fe117.chunk.css.map",
+    "static/js/2.d7c312c6.chunk.js.LICENSE.txt": "/dhabits-entrance-test/static/js/2.d7c312c6.chunk.js.LICENSE.txt",
+    "static/media/sprite.d950905d.svg": "/dhabits-entrance-test/static/media/sprite.d950905d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.219439f0.js",
+    "static/js/2.d7c312c6.chunk.js",
+    "static/css/main.302fe117.chunk.css",
+    "static/js/main.a98ce057.chunk.js"
+  ]
+}
