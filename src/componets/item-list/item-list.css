@@ -1,0 +1,28 @@
+.tree__list {
+  list-style: none;
+  padding: 0 0 0 5rem;
+  font-size: 1.5rem;
+}
+
+.tree__item {
+  position: relative;
+}
+
+.tree__item-icon,
+.tree__item-switcher {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: -2rem;
+  top: 3px;
+}
+
+.tree__item-switcher {
+  left: -4.5rem;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.tree__item-switcher_open {
+  transform: rotate(0);
+}
